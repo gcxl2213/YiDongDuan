@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CourseFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_view"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_setting">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/detail_bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/banke3">
+            </ImageButton>
+
+            <RelativeLayout
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/project_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工程实践"
+                    android:textSize="20sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/project_name1"
+                    android:text="老师 2021-3"
+                    android:textSize="15sp">
+                </TextView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/qiandao_go_bt"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bt_shape_2"
+                android:text="签到"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp">
+            </Button>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bt_shape_2"
+                android:text="作业"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp">
+            </Button>
+
+            <Button
+                android:id="@+id/detail_bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|end"
+                android:background="#0000"
+                android:gravity="center_vertical|end"
+                android:text=">"
+                android:textColor="@color/gray_normal_dark"
+                android:textSize="20sp"/>
+        </TableRow>
+    </TableLayout>
+</FrameLayout>

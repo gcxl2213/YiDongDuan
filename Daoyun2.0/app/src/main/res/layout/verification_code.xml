@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/yanzhengma"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="登 录"
+        android:textSize="30sp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+        </TextView>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="手机号："
+                android:textSize="20dp"
+                android:layout_gravity="start|center_vertical">
+            </TextView>
+
+            <EditText
+                android:id="@+id/phone_number_vercode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:hint="手机号码"
+                android:inputType="number"
+                android:paddingBottom="20dp">
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="验证码："
+                android:textSize="20dp"
+
+                android:layout_gravity="start|center_vertical">
+            </TextView>
+
+            <EditText
+                android:id="@+id/vercode_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:hint="验证码"
+                android:inputType="number"
+                android:paddingBottom="20dp">
+            </EditText>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/get_yanzhengma"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="获取验证码"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bt_shape"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+    </Button>
+    <Button
+        android:id="@+id/btn_login_verification"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="登录"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bt_shape"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+    </Button>
+    <TextView
+        android:id="@+id/register2"
+        style="@style/TextStyle.Explain"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="注册到云账户"
+        android:textColor="@color/xui_config_color_primary_text" />
+
+</LinearLayout>
