@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.ten_daoyun.activities.LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/regist_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/ic_arrow_back_white_36dp"/>
+
+    </android.support.v7.widget.Toolbar>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel_Primary">
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="*请输入手机号"
+                            android:inputType="textPersonName"
+                            android:paddingBottom="2dp"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:theme="@style/TextLabel_Primary">
+
+                        <EditText
+                            android:id="@+id/et_verify_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="*验证码"
+                            android:inputType="number"
+                            android:paddingBottom="2dp"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="16sp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="end">
+
+                        <Button
+                            android:id="@+id/send_verify_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="发送验证码"
+                            android:textColor="@color/dark"
+                            android:backgroundTint="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel_Primary">
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="*请输入密码"
+                            android:inputType="textPassword"
+                            android:paddingBottom="2dp"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel_Primary">
+
+                        <EditText
+                            android:id="@+id/et_repeatpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="*请确认密码"
+                            android:inputType="textPassword"
+                            android:paddingBottom="2dp"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel_Primary">
+
+                        <EditText
+                            android:id="@+id/user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="*姓名"
+                            android:inputType="textPersonName"
+                            android:paddingBottom="2dp"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextLabel_Primary">
+
+                        <EditText
+                            android:id="@+id/et_user_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:hint="*学号/工号"
+                            android:inputType="text"
+                            android:paddingBottom="2dp"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_stu"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+<!--                    <android.support.design.widget.TextInputLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="3"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:theme="@style/TextLabel_Primary"-->
+<!--                        android:layout_marginEnd="4dp">-->
+
+<!--                        <android.support.v7.widget.AppCompatAutoCompleteTextView-->
+<!--                            android:id="@+id/act_user_school"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/selector_bg_edit_2"-->
+<!--                            android:hint="学校"-->
+<!--                            android:inputType="text"-->
+<!--                            android:paddingBottom="2dp"-->
+<!--                            android:textCursorDrawable="@drawable/bg_input_cursor_2"-->
+<!--                            android:textSize="16sp" />-->
+<!--                    </android.support.design.widget.TextInputLayout>-->
+
+
+<!--                    <android.support.design.widget.TextInputLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="3"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:theme="@style/TextLabel_Primary"-->
+<!--                        android:layout_marginStart="4dp"-->
+<!--                        android:layout_marginEnd="4dp">-->
+
+<!--                        <android.support.v7.widget.AppCompatAutoCompleteTextView-->
+<!--                            android:id="@+id/act_user_department"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/selector_bg_edit_2"-->
+<!--                            android:hint="学院"-->
+<!--                            android:inputType="text"-->
+<!--                            android:paddingBottom="2dp"-->
+<!--                            android:textCursorDrawable="@drawable/bg_input_cursor_2"-->
+<!--                            android:textSize="16sp" />-->
+<!--                    </android.support.design.widget.TextInputLayout>-->
+                    <Spinner
+                        android:id="@+id/spinner_school"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner_academy"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <Button
+                        android:id="@+id/bt_go"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bt_shape"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="注册"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:id="@+id/bt_switch_type"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bt_shape"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="切换注册类型"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginStart="8dp"/>
+
+                </LinearLayout>
+
+
+</LinearLayout>
